@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
     TextView nameView, groupView, ageView, markView;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +34,6 @@ public class SecondActivity extends AppCompatActivity {
         this.groupView.setText(group);
         this.markView.setText(mark);
     }
-
     public void toMain(View view){
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

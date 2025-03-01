@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity{
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("Debug", "Start");
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         Log.d("Debug", "Resume");
